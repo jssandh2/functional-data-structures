@@ -1,6 +1,9 @@
 # Functional Data Structures
 * A repository containing implementations of Data Structures in a _Functional_ Format, using the [SML](https://en.wikipedia.org/wiki/Standard_ML) language.
 
+## LINK TO REPOSITORY
+* [functional-data-structures](https://github.com/jssandh2/functional-data-structures)
+
 ## INSTALLATION
 ### Clone Repo
 * Make sure you have _git_ installed. If not (and you're using a _Mac_) :
@@ -71,7 +74,7 @@ val avlTreeOne' = insertTen avlTreeOne (* Returns an Avl_Tree *)
 val avlTreeTwo' = insertTen avlTreeTwo (* Returns an Avl_Tree *)
 ```
 
-## Data Structures
+## DATA STRUCTURES
 ### Data Structures (Currently Supported)
 * The Data Structures currently avaiable are :
     * Stack : Details regarding _Time_ and _Space_ Complexity of the supported functions will be up soon.
