@@ -1,7 +1,7 @@
 # Functional Data Structures
 * A repository containing implementations of Data Structures in a _Functional_ Format, using the [SML](https://en.wikipedia.org/wiki/Standard_ML) language.
 
-## LINK TO REPOSITORY
+## REPOSITORY
 * [functional-data-structures](https://github.com/jssandh2/functional-data-structures)
 
 ## INSTALLATION
