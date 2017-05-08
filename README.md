@@ -77,14 +77,14 @@ val avlTreeTwo' = insertTen avlTreeTwo (* Returns an Avl_Tree *)
 ## DATA STRUCTURES
 ### Data Structures (Currently Supported)
 * The Data Structures currently avaiable are :
-    * Stack : Details regarding _Time_ and _Space_ Complexity of the supported functions will be up soon.
-    * AVL Tree : Details regarding _Time_ and _Space_ Complexity of the supported functions will be up soon.
+    * Stack
+    * Binary Search Tree
     
 ### Data Structures (In Progress)
 * The Data Structures that are being (currently) completed and updated are :
     * AVL Tree
 
-### Data Structures (Planned)
+### Data Structures (Todo)
 * The Data Structures that the repo shall provide support for in the future include :
     * Red-Black Tree
     * Queue
