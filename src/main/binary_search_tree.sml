@@ -15,9 +15,23 @@ fun insertHelper elem tree =
    |  CONS(l,x,r) => if elem < x then CONS((insertHelper elem l),x,r) else CONS(l,x,(insertHelper elem r))
    |  NIL => CONS(NIL,elem,NIL)
 
-(* The insert function simply inserts the element into the Binary Search Tree *)
+(* The 'insert' function simply inserts the element into the Binary Search Tree *)
 fun insert elem tree =
   insertHelper elem tree
+
+(* The getHelper function is a helper function for get *)
+(* DO NOT CALL DIRECTLY *)
+fun getHelper elem tree =
+  case tree of
+      CONS(NIL,x,NIL) => if elem = x then CONS(NIL,x,NIL) else NIL
+   |  CONS(NIL,x,r) => if elem = x then CONS(NIL,x,r) else if elem < x then NIL else getHelper elem r
+   |  CONS(l,x,NIL) => if elem = x then CONS(l,x,NIL) else if elem < x then getHelper elem l else NIL
+   |  CONS(l,x,r) => if elem = x then CONS(l,x,r) else if elem < x then getHelper elem l else getHelper elem r
+   |  NIL => NIL
+
+(* The 'get' function returns the Sub-Tree of tree rooted at the element (int) queried for (if it exists) in the Binary_Search_Tree, else it returns NIL *)
+fun get elem tree =
+  getHelper elem tree
 
 (* The makeTreeHelper function is a helper function for makeTree *)
 (* Makes a tree, given a List 'listInt' and a previous Binary_Search_Tree, by
