@@ -20,7 +20,8 @@ fun insert elem tree =
   insertHelper elem tree
 
 (* The makeTreeHelper function is a helper function for makeTree *)
-(* Makes a tree, given a List 'listInt' and a previous Avl_Tree, by rooting the first element of the List if Avl_Tree is empty, else inserting in the order presented in the List *)
+(* Makes a tree, given a List 'listInt' and a previous Binary_Search_Tree, by
+* rooting the first element of the List if the Binary_Search__Tree is empty, else inserting in the order presented in the List *)
 (* DO NOT CALL DIRECTLY *)
 fun makeTreeHelper listInt tree =
   case listInt of
@@ -41,11 +42,11 @@ fun getIntList currRoot =
 (* DO NOT CALL DIRECTLY *)
 fun addNodeToQueue queueNodes currRoot =
   case currRoot of
-	      CONS(NIL,x,NIL) => queueNodes
-     |  CONS(NIL,x,r) => queueNodes @ [r]
-     |  CONS(l,x,NIL) => queueNodes @ [l]
-     |  CONS(l,x,r) => queueNodes @ [l,r]
-     |  _ => queueNodes
+      CONS(NIL,x,NIL) => queueNodes
+   |  CONS(NIL,x,r) => queueNodes @ [r]
+   |  CONS(l,x,NIL) => queueNodes @ [l]
+   |  CONS(l,x,r) => queueNodes @ [l,r]
+   |  _ => queueNodes
 
 (* Helper Function for doing a Level-Order-Traversal *)
 (* DO NOT CALL DIRECTLY *)
