@@ -26,7 +26,7 @@ git clone git@github.com:jssandh2/Functional_Data_Structures.git
 ## USAGE
 ### Memory Allocation
 * The Data Structures use _immutability_ (mostly) **and** _pattern matching_.
-* The Recursion is optimized to be _tail recursive_ (wherever possible). However, for very large ADTs (such as _Trees_), it is possible to run into a **Stack Overflow** exception. The easiest way to get rid of this is to increase the memory allocated to the Stack in your IDE/Environment.
+* The Recursion is optimized to be _tail recursive_ (wherever possible). However, for very large ADTs (such as _Trees_), it is possible to run into a **Stack Overflow** exception. The easiest way to get rid of this is to increase the memory allocated to the Stack/Heap in your IDE/Environment.
 
 ### Types
 * Each Data Structure is implemented as a :
@@ -57,7 +57,7 @@ fun areThreeReversed x = fn y => fn z => x >=y andalso y >= z (* This function h
 ```
 * The above has syntactic sugar as :
 ```sml
-fun areThreeReversed x y z = x >= y andalso y >= z (* This functiona also has type : int -> int -> int -> bool *)
+fun areThreeReversed x y z = x >= y andalso y >= z (* This function _also_ has type : int -> int -> int -> bool *)
 ```
 * However, the above 2 are **not** equivalent to this :
 ```sml
